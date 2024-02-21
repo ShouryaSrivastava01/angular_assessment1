@@ -1,0 +1,5 @@
+<div *ngFor="let task of tasks" [appHighlightTask]="task.status" routerLink="/task/{{task.id}}">
+<h3>{{task.title}}</h3>
+<p>{{task.description}}</p>
+<p>{{task.status}}</p>
+</div>
